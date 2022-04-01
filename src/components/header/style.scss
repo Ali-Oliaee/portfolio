@@ -1,4 +1,4 @@
-.header {
+.desktop-header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -10,4 +10,17 @@
   .MuiButtonBase-root {
     color: #e5e5e5;
   }
+}
+.mobile-header {
+  .burger-icon {
+    width: 30px;
+    height: 30px;
+    color: #e5e5e5;
+    opacity: 0.8;
+    margin: 10px;
+  }
+}
+.MuiDrawer-paperAnchorLeft {
+  min-width: 220px;
+  background-color: red;
 }
