@@ -1,6 +1,7 @@
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -23,17 +24,14 @@ const DesktopHeader = () => {
     setValue(newValue);
   };
 
-  function LinkTab(props) {
-    return (
-      <Tab
-        component="a"
-        onClick={(event) => {
-          event.preventDefault();
-        }}
-        {...props}
-      />
-    );
-  }
+  const LinkTab = (props) => (
+    <Tab
+      onClick={(event) => event.preventDefault}
+      {...props}
+      LinkComponent={Link}
+      to={props.to}
+    />
+  );
 
   return (
     <div className="desktop-header">
@@ -41,15 +39,14 @@ const DesktopHeader = () => {
         value={value}
         onChange={handleChange}
         className="tabs"
-        aria-label="nav tabs example"
         textColor="primary"
         indicatorColor="primary"
       >
-        <LinkTab label="Home" />
-        <LinkTab label="About" />
-        <LinkTab label="Resume" />
-        <LinkTab label="Portfolio" />
-        <LinkTab label="Contact" />
+        <LinkTab label="Home" to="/" />
+        <LinkTab label="About" to="/about" />
+        <LinkTab label="Resume" to="/resume" />
+        <LinkTab label="Portfolio" to="/portfolio" />
+        <LinkTab label="Contact" to="/contact" />
       </Tabs>
     </div>
   );
