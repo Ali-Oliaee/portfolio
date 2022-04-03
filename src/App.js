@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import MainRouter from "./router";
 
@@ -7,6 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <MainRouter />
+      <Footer />
     </BrowserRouter>
   );
 };
