@@ -1,0 +1,29 @@
+.contact-card {
+  min-width: 260px;
+  max-width: 260px;
+  border: 1px solid #e5e5e5;
+  background: rgba(125, 125, 125, 0.4);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+  margin: 10px 20px;
+  color: #e5e5e5;
+  cursor: pointer;
+
+  .card-icon {
+    margin-inline-end: 20px;
+    background-color: rgba(18, 26, 18, 0.933);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fca311;
+    position: relative;
+  }
+  .icon svg {
+    position: absolute;
+  }
+}

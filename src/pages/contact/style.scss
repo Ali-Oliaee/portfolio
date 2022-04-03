@@ -1,0 +1,36 @@
+.contact-page {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e5e5e5;
+
+  h1 {
+    padding: 10px;
+  }
+  p {
+    padding: 20px;
+  }
+
+  .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social {
+    width: 100%;
+
+    .icon-button {
+      color: #e5e5e5;
+      opacity: 0.6;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
