@@ -1,0 +1,26 @@
+.project-card {
+  width: 340px;
+  color: #000;
+  margin: 20px;
+  background-color: #fff;
+
+  img {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+  .description-bar {
+    padding: 20px;
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
