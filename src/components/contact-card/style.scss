@@ -1,6 +1,6 @@
 .contact-card {
   min-width: 260px;
-  max-width: 300px;
+  max-width: 260px;
   border: 1px solid #e5e5e5;
   background: rgba(125, 125, 125, 0.4);
   border-radius: 8px;
@@ -12,7 +12,7 @@
   color: #e5e5e5;
   cursor: pointer;
 
-  .icon {
+  .card-icon {
     margin-inline-end: 20px;
     background-color: rgba(18, 26, 18, 0.933);
     padding: 20px;

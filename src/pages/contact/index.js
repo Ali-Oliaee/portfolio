@@ -3,6 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import SocialButtons from "../../components/social-media";
 import "./style.scss";
 
 const ContactPage = () => {
@@ -25,7 +26,7 @@ const ContactPage = () => {
         <ContactCard
           icon={<EmojiPeopleIcon />}
           title="Social media"
-          text="+989105753695"
+          text={<SocialButtons className="social" />}
         />
       </div>
     </div>
