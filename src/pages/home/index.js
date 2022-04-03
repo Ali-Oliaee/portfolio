@@ -7,7 +7,7 @@ const HomePage = () => {
       <h1 className="name">
         Ali <span className="family">Oliaee</span>
       </h1>
-      <p className="description">Front-end developer</p>
+      <p className="description">Front-end developer and a codeholic person</p>
       <SocialButtons />
     </div>
   );
