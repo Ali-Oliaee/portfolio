@@ -5,6 +5,7 @@ import InterestCard from "../../components/interest-card";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 const AboutPage = () => {
@@ -21,7 +22,8 @@ const AboutPage = () => {
           worked on, and the skills I have acquired over the years.
         </p>
         <p>
-          if you have any questions or criticism, Do not delay and contact me.
+          if you have any questions or criticism, Do not delay and{" "}
+          <Link to="/contact">contact me</Link>
         </p>
       </div>
       <div className="interests">
