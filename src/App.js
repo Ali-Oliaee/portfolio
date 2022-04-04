@@ -1,15 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import MainRouter from "./router";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div className="App">
       <Header />
       <MainRouter />
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 };
 
