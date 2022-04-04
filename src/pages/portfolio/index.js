@@ -36,9 +36,8 @@ const PortfolioPage = () => {
           src={portfolio}
           title="Portfolio"
           description="My portfolio website, created by react and MUI library. internationalized with i18next."
-          // demo="https://ali80-sys.github.io/portfolio/"
+          demo="https://ali80-sys.github.io/Ali-Oliaee/"
           code="https://github.com/ali80-sys/Ali-Oliaee/"
-          disableDemo
         />
         <ProjectCard
           src={calculator}
@@ -57,9 +56,8 @@ const PortfolioPage = () => {
           src={lovePage}
           title="Love Page"
           description="A simple HTML document that allows users to add their own messages to the page."
-          // demo="https://ali80-sys.github.io/Love-page/"
+          demo="https://ali80-sys.github.io/Love-page/"
           code="https://github.com/ali80-sys/Love-page/"
-          disableDemo
         />
         <ProjectCard
           src={adviceGenerator}

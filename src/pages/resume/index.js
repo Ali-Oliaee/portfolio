@@ -65,9 +65,8 @@ const ResumePage = () => {
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent color="text.secondary">
-              React-query, React-Router, React-Router-Dom, Antdesign and
-              MaterialUI, i18n, npm and yarn, hooks, formik, axios, eslint, ssg
-              and ssr (nextjs)
+              React-query, React-Router, Antdesign and MaterialUI, i18n, npm and
+              yarn, hooks, formik, axios, eslint, ssg and ssr (nextjs)
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" />
