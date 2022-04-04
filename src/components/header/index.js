@@ -67,31 +67,56 @@ const MobileHeader = () => {
         className="mobile-header-drawer"
       >
         <List>
-          <ListItem button>
+          <ListItem
+            button
+            component={Link}
+            to="/"
+            onClick={() => setVisible(false)}
+          >
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
-          <ListItem button>
+          <ListItem
+            button
+            component={Link}
+            to="/about"
+            onClick={() => setVisible(false)}
+          >
             <ListItemIcon>
               <InfoOutlinedIcon />
             </ListItemIcon>
             <ListItemText primary="About" />
           </ListItem>
-          <ListItem button>
+          <ListItem
+            button
+            component={Link}
+            to="/resume"
+            onClick={() => setVisible(false)}
+          >
             <ListItemIcon>
               <FeedOutlinedIcon />
             </ListItemIcon>
             <ListItemText primary="Resume" />
           </ListItem>
-          <ListItem button>
+          <ListItem
+            button
+            component={Link}
+            to="/portfolio"
+            onClick={() => setVisible(false)}
+          >
             <ListItemIcon>
               <ArrowCircleDownIcon />
             </ListItemIcon>
             <ListItemText primary="Portfolio" />
           </ListItem>
-          <ListItem button>
+          <ListItem
+            button
+            component={Link}
+            to="/contact"
+            onClick={() => setVisible(false)}
+          >
             <ListItemIcon>
               <CallIcon />
             </ListItemIcon>
