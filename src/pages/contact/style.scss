@@ -16,7 +16,8 @@
   .cards-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .social {
@@ -30,6 +31,35 @@
         width: 20px;
         height: 20px;
       }
+    }
+  }
+  .social-card {
+    height: 130px;
+    border: 1px solid #e5e5e5;
+    background: rgba(125, 125, 125, 0.4);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 10px;
+    color: #e5e5e5;
+    cursor: pointer;
+    width: 300px;
+
+    .card-icon {
+      margin-inline-end: 20px;
+      background-color: rgba(18, 26, 18, 0.933);
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fca311;
+      position: relative;
+    }
+    .icon svg {
+      position: absolute;
     }
   }
 }
