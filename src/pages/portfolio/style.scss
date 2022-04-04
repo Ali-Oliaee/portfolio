@@ -1,0 +1,20 @@
+.portfolio-page {
+  color: #e5e5e5;
+  min-height: 85vh;
+  flex: 1;
+
+  h1 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .learn-more-button {
+    text-align: center;
+  }
+}
