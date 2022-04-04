@@ -3,8 +3,7 @@ import "./style.scss";
 
 const ProjectCard = ({ src, alt, title, description, demo, code }) => {
   return (
-    <div className="project-card">
-      <img src={src} alt={alt} />
+    <div className="project-card" style={{ backgroundImage: `url(${src})` }}>
       <div className="description-bar">
         <h3>{title}</h3>
         <p>{description}</p>
