@@ -3,6 +3,7 @@ import AboutPage from "../pages/about";
 import HomePage from "../pages/home/";
 import ContactPage from "../pages/contact";
 import PortfolioPage from "../pages/portfolio";
+import ResumePage from "../pages/resume";
 
 const MainRouter = () => {
   return (
@@ -11,6 +12,7 @@ const MainRouter = () => {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/portfolio" element={<PortfolioPage />} />
+      <Route path="/resume" element={<ResumePage />} />
     </Routes>
   );
 };

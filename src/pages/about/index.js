@@ -7,6 +7,7 @@ import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import { Link } from "react-router-dom";
 import "./style.scss";
+import { Button } from "@mui/material";
 
 const AboutPage = () => {
   return (
@@ -23,7 +24,9 @@ const AboutPage = () => {
         </p>
         <p>
           if you have any questions or criticism, Do not delay and{" "}
-          <Link to="/contact">contact me</Link>
+          <Button to="/contact" LinkComponent={Link}>
+            contact me
+          </Button>
         </p>
       </div>
       <div className="interests">
