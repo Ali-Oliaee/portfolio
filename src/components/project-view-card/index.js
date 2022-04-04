@@ -1,19 +1,23 @@
 import Button from "@mui/material/Button";
+import notFound from "../../assets/images/not-found.png";
 import "./style.scss";
 
-const ProjectCard = ({ src, alt, title, description, demo, code }) => {
+const ProjectCard = ({ src, title, description, demo, code, disableDemo }) => {
   return (
-    <div className="project-card" style={{ backgroundImage: `url(${src})` }}>
+    <div
+      className="project-card"
+      style={{ backgroundImage: `url(${src ?? notFound})` }}
+    >
       <div className="description-bar">
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="button-container">
-          <a href={demo} target="_blank" rel="noreferrer">
-            <Button>Demo</Button>
-          </a>
-          <a href={code} target="_blank" rel="noreferrer">
-            <Button>Source code</Button>
-          </a>
+          <Button disabled={disableDemo} href={demo} target="_blank">
+            Demo
+          </Button>
+          <Button href={code} target="_blank">
+            Source code
+          </Button>
         </div>
       </div>
     </div>
