@@ -1,8 +1,8 @@
 import "./style.scss";
 
-const ContactCard = ({ icon, title, text }) => {
+const ContactCard = ({ icon, title, text, className }) => {
   return (
-    <div className="contact-card">
+    <div className={className ?? "contact-card"}>
       <span className="card-icon">{icon}</span>
       <div>
         <h2>{title}</h2>

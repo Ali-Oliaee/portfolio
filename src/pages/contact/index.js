@@ -27,6 +27,7 @@ const ContactPage = () => {
           icon={<EmojiPeopleIcon />}
           title="Social media"
           text={<SocialButtons className="social" />}
+          className="social-card"
         />
       </div>
     </div>

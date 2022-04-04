@@ -55,7 +55,7 @@ const ResumePage = () => {
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent color="text.secondary">
-              Api,es6
+              API, es6
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" />
