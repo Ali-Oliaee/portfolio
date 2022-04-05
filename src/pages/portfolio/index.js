@@ -11,86 +11,88 @@ import qrCard from "../../assets/images/qr-card.png";
 import signupPage from "../../assets/images/signup-page.png";
 import clock from "../../assets/images/digital-clock.png";
 import portfolio from "../../assets/images/portfolio.png";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 const PortfolioPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="portfolio-page">
-      <h1>Portfolio</h1>
+      <h1>{t("portfolio")}</h1>
       <div className="container">
         <ProjectCard
           src={phoneBook}
-          title="Phone Book"
-          description="A phone book application that allows users to add, edit, and delete contacts. crud on sql using node js and help ant design library for ui."
+          title={t("phone-book")}
+          description={t("phone-book-description")}
           code="https://github.com/ali80-sys/phoneBook/"
           disableDemo
         />
         <ProjectCard
           src={signupPage}
-          title="Signup page"
-          description="A signup page for a user to signup and create an account, a challenge from frontend mentor website. created by react and ant design library."
+          title={t("signup-page")}
+          description={t("signup-page-description")}
           demo="https://ali80-sys.github.io/signup-page/"
           code="https://github.com/ali80-sys/signup-page/"
         />
         <ProjectCard
           src={portfolio}
-          title="Portfolio"
-          description="My portfolio website, created by react and MUI library. internationalized with i18next."
+          title={t("portfolio")}
+          description={t("portfolio-description")}
           demo="https://ali80-sys.github.io/Ali-Oliaee/"
           code="https://github.com/ali80-sys/Ali-Oliaee/"
         />
         <ProjectCard
           src={calculator}
-          title="Calculator"
-          description="A simple calculator that I made for fun contains oop javascript and neumorphism design."
+          title={t("calculator")}
+          description={t("calculator-description")}
           demo="https://ali80-sys.github.io/Calculator/"
           code="https://github.com/ali80-sys/Calculator/"
         />
         <ProjectCard
-          title="News website"
-          description="A news website with signup and login form, based on typescript, react. designed by ant design library and get content from fakerjs."
+          title={t("news-site")}
+          description={t("news-site-description")}
           code="https://github.com/ali80-sys/lorem-news/"
           disableDemo
         />
         <ProjectCard
           src={lovePage}
-          title="Love Page"
-          description="A simple HTML document that allows users to add their own messages to the page."
+          title={t("love-page")}
+          description={t("love-page-description")}
           demo="https://ali80-sys.github.io/Love-page/"
           code="https://github.com/ali80-sys/Love-page/"
         />
         <ProjectCard
           src={adviceGenerator}
-          title="Advice Generator"
-          description="It's a challenge from frontend mentor website, that generates random advice for users.with the help of API."
+          title={t("advice-generator")}
+          description={t("advice-description")}
           demo="https://ali80-sys.github.io/advice-generator-app/"
           code="https://github.com/ali80-sys/advice-generator-app/"
         />
         <ProjectCard
           src={nftCard}
-          title="NFT Card"
-          description="It's a challenge from frontend mentor website, a simple preview of NFT card."
+          title={t("nft-card")}
+          description={t("nft-description")}
           demo="https://ali80-sys.github.io/NFT-card-component/"
           code="https://github.com/ali80-sys/NFT-card-component/"
         />
         <ProjectCard
           src={clock}
-          title="Digital Clock"
-          description="Just a simple clock with extra feature :)"
+          title={t("digital-clock")}
+          description={t("clock-description")}
           demo="https://ali80-sys.github.io/Digital-clock/"
           code="https://github.com/ali80-sys/Digital-clock/"
         />
         <ProjectCard
           src={aiPage}
-          title="AI Page"
-          description="My first project that I uploaded to GitHub. It is a simple page that has information about artificial intelligence."
+          title={t("ai-page")}
+          description={t("ai-page-description")}
           demo="https://ali80-sys.github.io/Single-webPage/"
           code="https://github.com/ali80-sys/Single-webPage/"
         />
         <ProjectCard
           src={instagramUi}
-          title="Instagram UI"
-          description="Just a simple UI that I made for Instagram. images are not loaded because Fakerjs library broke down. :("
+          title={t("instagram-ui")}
+          description={t("instagram-ui-description")}
           // demo="https://ali80-sys.github.io/Instagram-UI/"
           code="https://github.com/ali80-sys/Instagram-UI/"
           disableDemo
@@ -98,8 +100,8 @@ const PortfolioPage = () => {
 
         <ProjectCard
           src={qrCard}
-          title="QR Card"
-          description="It's a challenge from frontend mentor website, a simple preview of QR card."
+          title={t("qr-card")}
+          description={t("qr-card-description")}
           demo="https://ali80-sys.github.io/QR-card-component/"
           code="https://github.com/ali80-sys/QR-card-component/"
         />
@@ -109,7 +111,7 @@ const PortfolioPage = () => {
           href="https://github.com/ali80-sys?tab=repositories"
           target="_blank"
         >
-          Learn more...
+          {t("learn-more")}
         </Button>
       </div>
     </div>

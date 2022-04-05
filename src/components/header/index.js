@@ -44,16 +44,17 @@ const DesktopHeader = () => {
         indicatorColor="primary"
       >
         <LinkTab label={t("home")} to="/Ali-Oliaee" />
-        <LinkTab label="About" to="/about" />
-        <LinkTab label="Resume" to="/resume" />
-        <LinkTab label="Portfolio" to="/portfolio" />
-        <LinkTab label="Contact" to="/contact" />
+        <LinkTab label={t("about")} to="/about" />
+        <LinkTab label={t("resume")} to="/resume" />
+        <LinkTab label={t("portfolio")} to="/portfolio" />
+        <LinkTab label={t("contact")} to="/contact" />
       </Tabs>
     </div>
   );
 };
 
 const MobileHeader = () => {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
 
   return (
@@ -77,7 +78,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemText primary={t("home")} />
           </ListItem>
           <ListItem
             button
@@ -88,7 +89,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <InfoOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary="About" />
+            <ListItemText primary={t("about")} />
           </ListItem>
           <ListItem
             button
@@ -99,7 +100,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <FeedOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary="Resume" />
+            <ListItemText primary={t("resume")} />
           </ListItem>
           <ListItem
             button
@@ -110,7 +111,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <ArrowCircleDownIcon />
             </ListItemIcon>
-            <ListItemText primary="Portfolio" />
+            <ListItemText primary={t("portfolio")} />
           </ListItem>
           <ListItem
             button
@@ -121,9 +122,10 @@ const MobileHeader = () => {
             <ListItemIcon>
               <CallIcon />
             </ListItemIcon>
-            <ListItemText primary="Contact" />
+            <ListItemText primary={t("contact")} />
           </ListItem>
         </List>
+        <SwitchLanguage />
       </Drawer>
     </div>
   );
