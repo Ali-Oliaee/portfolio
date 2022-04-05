@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<h3>loading</h3>}>
           <App />
         </Suspense>
       </ThemeProvider>

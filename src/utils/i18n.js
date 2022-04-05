@@ -22,4 +22,8 @@ i18n.use(initReactI18next).init({
   },
 });
 
+i18n.on("languageChanged", (lng) => {
+  lng === "fa" ? (document.body.dir = "rtl") : (document.body.dir = "ltr");
+});
+
 export default i18n;

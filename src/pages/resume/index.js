@@ -12,9 +12,28 @@ const ResumePage = () => {
   const { t } = useTranslation();
   return (
     <div className="resume-page">
+      <div>
+        <div className="experience">
+          <h2 className="title">{t("experience")}</h2>
+          <p>{t("experience-description")}</p>
+        </div>
+        <div className="education">
+          <h2 className="title">{t("education")}</h2>
+          <p>{t("education-description")}</p>
+        </div>
+        <div className="personality">
+          <h2 className="title">{t("personality")}</h2>
+          <ul>
+            <li>{t("trustworthy")}</li>
+            <li>{t("teamwork")}</li>
+            <li>{t("learner")}</li>
+            <li>{t("listener")}</li>
+          </ul>
+        </div>
+      </div>
       <div className="skills">
         <h2 className="title">{t("skills")}</h2>
-        <Timeline position="alternate">
+        <Timeline position="alternate" style={{ direction: "ltr" }}>
           <TimelineItem>
             <TimelineOppositeContent color="text.secondary">
               c++, algoritms, data structures
@@ -97,25 +116,6 @@ const ResumePage = () => {
             <TimelineContent>Nodejs</TimelineContent>
           </TimelineItem>
         </Timeline>
-      </div>
-      <div>
-        <div className="experience">
-          <h2 className="title">{t("experience")}</h2>
-          <p>{t("experience-description")}</p>
-        </div>
-        <div className="education">
-          <h2 className="title">{t("education")}</h2>
-          <p>{t("education-description")}</p>
-        </div>
-        <div className="personality">
-          <h2 className="title">{t("personality")}</h2>
-          <ul>
-            <li>{t("trustworthy")}</li>
-            <li>{t("teamwork")}</li>
-            <li>{t("learner")}</li>
-            <li>{t("listener")}</li>
-          </ul>
-        </div>
       </div>
     </div>
   );

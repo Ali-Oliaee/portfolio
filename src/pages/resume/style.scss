@@ -4,6 +4,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin: 40px 0;
+  margin-inline-start: 50px;
 
   @media screen and (max-width: 500px) {
     flex-direction: column;

@@ -1,8 +1,8 @@
-import i18n from "../../utils/i18n";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { useTranslation } from "react-i18next";
+import i18n from "../../utils/i18n";
 import "./style.scss";
 
 const SwitchLanguage = () => {
