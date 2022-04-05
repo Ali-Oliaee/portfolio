@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "shabnam";
+  src: url("./assets/fonts/shabnam.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: "Andika", sans-serif;
+  font-family: "shabnam", "Andika", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
