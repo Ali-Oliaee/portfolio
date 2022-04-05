@@ -6,6 +6,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GoogleIcon from "@mui/icons-material/Google";
 import { ReactComponent as FrontendMentorLogo } from "../../assets/images/frontendmentor-logo.svg";
 import { ReactComponent as GitlabLogo } from "../../assets/images/gitlab-logo.svg";
+import { ReactComponent as QueraLogo } from "../../assets/images/quera-logo.svg";
 import "./style.scss";
 
 const SocialButtons = ({ className }) => {
@@ -55,6 +56,13 @@ const SocialButtons = ({ className }) => {
         target="_blank"
       >
         <WhatsAppIcon />
+      </IconButton>
+      <IconButton
+        className="icon-button"
+        href="https://quera.org/profile/mrv9bp"
+        target="_blank"
+      >
+        <QueraLogo className="icon-button" />
       </IconButton>
     </div>
   );
