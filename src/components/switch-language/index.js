@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../utils/i18n";
 import "./style.scss";
 
-const SwitchLanguage = () => {
+const SwitchLanguage = ({ className }) => {
   const { t } = useTranslation();
   return (
-    <div className="switch-language">
+    <div className={className ?? "switch-language"}>
       <span className="language">{t("language")}:</span>
       <FormControl variant="standard">
         <Select

@@ -35,7 +35,6 @@ const DesktopHeader = () => {
 
   return (
     <div className="desktop-header">
-      <SwitchLanguage />
       <Tabs
         value={value}
         onChange={handleChange}
@@ -49,6 +48,7 @@ const DesktopHeader = () => {
         <LinkTab label={t("portfolio")} to="/portfolio" />
         <LinkTab label={t("contact")} to="/contact" />
       </Tabs>
+      <SwitchLanguage />
     </div>
   );
 };
@@ -125,7 +125,7 @@ const MobileHeader = () => {
             <ListItemText primary={t("contact")} />
           </ListItem>
         </List>
-        <SwitchLanguage />
+        <SwitchLanguage className="mobile-header-switch-language" />
       </Drawer>
     </div>
   );
