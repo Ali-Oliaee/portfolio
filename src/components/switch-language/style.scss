@@ -1,0 +1,24 @@
+.switch-language {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  width: 200px;
+
+  .language {
+    color: #e5e5e5;
+    padding: 0 20px;
+  }
+  .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+    padding: 4px 8px;
+  }
+  .select {
+    background-color: rgba(133, 133, 133, 0.253);
+    border: 0;
+    text-align-last: center;
+
+    .MuiSelect-select {
+      color: #fca311;
+      font-weight: bold;
+    }
+  }
+}

@@ -15,9 +15,12 @@ import ListItem from "@mui/material/ListItem";
 import List from "@mui/material/List";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import SwitchLanguage from "../switch-language";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 const DesktopHeader = () => {
+  const { t } = useTranslation();
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => setValue(newValue);
 
@@ -39,17 +42,19 @@ const DesktopHeader = () => {
         textColor="primary"
         indicatorColor="primary"
       >
-        <LinkTab label="Home" to="/Ali-Oliaee" />
-        <LinkTab label="About" to="/about" />
-        <LinkTab label="Resume" to="/resume" />
-        <LinkTab label="Portfolio" to="/portfolio" />
-        <LinkTab label="Contact" to="/contact" />
+        <LinkTab label={t("home")} to="/Ali-Oliaee" />
+        <LinkTab label={t("about")} to="/about" />
+        <LinkTab label={t("resume")} to="/resume" />
+        <LinkTab label={t("portfolio")} to="/portfolio" />
+        <LinkTab label={t("contact")} to="/contact" />
       </Tabs>
+      <SwitchLanguage />
     </div>
   );
 };
 
 const MobileHeader = () => {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
 
   return (
@@ -73,7 +78,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemText primary={t("home")} />
           </ListItem>
           <ListItem
             button
@@ -84,7 +89,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <InfoOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary="About" />
+            <ListItemText primary={t("about")} />
           </ListItem>
           <ListItem
             button
@@ -95,7 +100,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <FeedOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary="Resume" />
+            <ListItemText primary={t("resume")} />
           </ListItem>
           <ListItem
             button
@@ -106,7 +111,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <ArrowCircleDownIcon />
             </ListItemIcon>
-            <ListItemText primary="Portfolio" />
+            <ListItemText primary={t("portfolio")} />
           </ListItem>
           <ListItem
             button
@@ -117,16 +122,17 @@ const MobileHeader = () => {
             <ListItemIcon>
               <CallIcon />
             </ListItemIcon>
-            <ListItemText primary="Contact" />
+            <ListItemText primary={t("contact")} />
           </ListItem>
         </List>
+        <SwitchLanguage className="mobile-header-switch-language" />
       </Drawer>
     </div>
   );
 };
 
 const Header = () => {
-  const isMobile = useMediaQuery("(max-width: 500px)");
+  const isMobile = useMediaQuery("(max-width: 680px)");
 
   return isMobile ? <MobileHeader /> : <DesktopHeader />;
 };

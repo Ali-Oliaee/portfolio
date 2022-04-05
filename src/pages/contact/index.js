@@ -4,28 +4,34 @@ import CallIcon from "@mui/icons-material/Call";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SocialButtons from "../../components/social-media";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 const ContactPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="contact-page">
-      <h1>Contact me</h1>
-      <p>you can contact me with this ways :)</p>
+      <h1>{t("contact-me")}</h1>
+      <p>{t("contact-description")}</p>
       <div className="cards-container">
         <ContactCard
           icon={<EmailIcon />}
-          title="Email me"
+          title={t("email")}
           text="alioiaee31@gmail.com"
         />
-        <ContactCard icon={<CallIcon />} title="Call me" text="+989105753695" />
+        <ContactCard
+          icon={<CallIcon />}
+          title={t("call")}
+          text={t("phone-number")}
+        />
         <ContactCard
           icon={<LocationOnIcon />}
-          title="My location"
-          text="Iran, Mashhad"
+          title={t("location")}
+          text={t("my-location")}
         />
         <ContactCard
           icon={<EmojiPeopleIcon />}
-          title="Social media"
+          title={t("social-media")}
           text={<SocialButtons className="social" />}
           className="social-card"
         />

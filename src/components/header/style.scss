@@ -1,7 +1,7 @@
 .desktop-header {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 
   .tabs {
@@ -22,4 +22,16 @@
 }
 .MuiDrawer-paperAnchorLeft {
   min-width: 220px;
+}
+.mobile-header-switch-language {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 20px;
+
+  .language {
+    padding-inline-end: 10px;
+  }
+  .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+    padding: 4px 8px;
+  }
 }
