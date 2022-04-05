@@ -1,10 +1,21 @@
 .switch-language {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 100px;
-  position: relative;
-  cursor: pointer;
-  z-index: 1;
+  align-items: baseline;
+  justify-content: flex-start;
+  width: 200px;
+
+  .language {
+    color: #e5e5e5;
+    padding: 0 20px;
+  }
+  .select {
+    background-color: rgba(133, 133, 133, 0.644);
+    border: 0;
+    text-align-last: center;
+
+    .MuiSelect-select {
+      color: #fca311;
+      font-weight: bold;
+    }
+  }
 }

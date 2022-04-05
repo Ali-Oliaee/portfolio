@@ -15,9 +15,12 @@ import ListItem from "@mui/material/ListItem";
 import List from "@mui/material/List";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import SwitchLanguage from "../switch-language";
+import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 const DesktopHeader = () => {
+  const { t } = useTranslation();
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => setValue(newValue);
 
@@ -32,6 +35,7 @@ const DesktopHeader = () => {
 
   return (
     <div className="desktop-header">
+      <SwitchLanguage />
       <Tabs
         value={value}
         onChange={handleChange}
@@ -39,7 +43,7 @@ const DesktopHeader = () => {
         textColor="primary"
         indicatorColor="primary"
       >
-        <LinkTab label="Home" to="/Ali-Oliaee" />
+        <LinkTab label={t("home")} to="/Ali-Oliaee" />
         <LinkTab label="About" to="/about" />
         <LinkTab label="Resume" to="/resume" />
         <LinkTab label="Portfolio" to="/portfolio" />
@@ -126,7 +130,7 @@ const MobileHeader = () => {
 };
 
 const Header = () => {
-  const isMobile = useMediaQuery("(max-width: 500px)");
+  const isMobile = useMediaQuery("(max-width: 680px)");
 
   return isMobile ? <MobileHeader /> : <DesktopHeader />;
 };
