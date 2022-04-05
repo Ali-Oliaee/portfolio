@@ -19,10 +19,7 @@ import "./style.scss";
 
 const DesktopHeader = () => {
   const [value, setValue] = useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  const handleChange = (event, newValue) => setValue(newValue);
 
   const LinkTab = (props) => (
     <Tab
@@ -42,7 +39,7 @@ const DesktopHeader = () => {
         textColor="primary"
         indicatorColor="primary"
       >
-        <LinkTab label="Home" to="/" />
+        <LinkTab label="Home" to="/Ali-Oliaee" />
         <LinkTab label="About" to="/about" />
         <LinkTab label="Resume" to="/resume" />
         <LinkTab label="Portfolio" to="/portfolio" />
@@ -70,7 +67,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/"
+            to="/Ali-Oliaee"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>

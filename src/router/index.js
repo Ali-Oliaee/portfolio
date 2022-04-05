@@ -8,7 +8,7 @@ import ResumePage from "../pages/resume";
 const MainRouter = () => {
   return (
     <Routes>
-      <Route index element={<HomePage />} />
+      <Route path="/Ali-Oliaee" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/portfolio" element={<PortfolioPage />} />

@@ -74,6 +74,26 @@ const ResumePage = () => {
             </TimelineSeparator>
             <TimelineContent>React</TimelineContent>
           </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              basic commands, terminal usage
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot color="primary" />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>Linux</TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">
+              Restful API, mysql, express
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot color="primary" />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>Nodejs</TimelineContent>
+          </TimelineItem>
         </Timeline>
       </div>
       <div>

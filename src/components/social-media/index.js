@@ -51,7 +51,7 @@ const SocialButtons = ({ className }) => {
       </IconButton>
       <IconButton
         className="icon-button"
-        href=" https://wa.me/+989105753695"
+        href=" https://wa.me/989105753695"
         target="_blank"
       >
         <WhatsAppIcon />

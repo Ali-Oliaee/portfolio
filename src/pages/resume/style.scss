@@ -5,6 +5,16 @@
   align-items: flex-start;
   margin: 40px 0;
 
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+
+    p,
+    .title,
+    .personality {
+      text-align: center;
+    }
+  }
+
   .MuiTypography-root {
     color: #fca311;
   }
@@ -24,8 +34,7 @@
 
   p {
     text-indent: 30px;
-    margin: 10px 0;
-    margin-inline-end: 10px;
+    margin: 10px;
   }
 
   .personality {
@@ -34,23 +43,7 @@
       margin-inline-start: 20px;
 
       li {
-        position: relative;
         list-style-type: none;
-        padding-left: 1.2em;
-      }
-      li:before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 3px;
-        width: 5px;
-        height: 11px;
-        border-width: 0 2px 2px 0;
-        border-style: solid;
-        border-color: #fca311;
-        transform-origin: bottom left;
-        transform: rotate(45deg);
       }
     }
   }
