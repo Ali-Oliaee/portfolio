@@ -17,7 +17,7 @@ const ContactPage = () => {
         <ContactCard
           icon={<EmailIcon />}
           title={t("email")}
-          text="alioiaee31@gmail.com"
+          text="alioliaee31@gmail.com"
         />
         <ContactCard
           icon={<CallIcon />}
