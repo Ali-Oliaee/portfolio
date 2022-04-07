@@ -11,6 +11,7 @@ import qrCard from "../../assets/images/qr-card.png";
 import signupPage from "../../assets/images/signup-page.png";
 import clock from "../../assets/images/digital-clock.png";
 import portfolio from "../../assets/images/portfolio.png";
+import newsSite from "../../assets/images/news-site.png";
 import { useTranslation } from "react-i18next";
 import SmoothList from "react-smooth-list";
 import "./style.scss";
@@ -51,10 +52,11 @@ const PortfolioPage = () => {
             code="https://github.com/ali80-sys/Calculator/"
           />
           <ProjectCard
+            src={newsSite}
             title={t("news-site")}
             description={t("news-site-description")}
+            demo="https://ali80-sys.github.io/lorem-news/"
             code="https://github.com/ali80-sys/lorem-news/"
-            disableDemo
           />
           <ProjectCard
             src={lovePage}

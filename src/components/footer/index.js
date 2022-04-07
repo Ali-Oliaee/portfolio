@@ -8,11 +8,11 @@ const Footer = () => {
     <footer className="footer">
       <p>
         &copy; {t("footer")}
-        <Button size="large" href="https://reactjs.org/">
+        <Button size="large" href="https://reactjs.org/" target="_blank">
           React
         </Button>
         {t("and")}
-        <Button size="large" href="https://mui.com/">
+        <Button size="large" href="https://mui.com/" target="_blank">
           MUI
         </Button>
       </p>
