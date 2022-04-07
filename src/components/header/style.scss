@@ -35,3 +35,10 @@
     padding: 4px 8px;
   }
 }
+.list {
+  .MuiListItemText-root {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

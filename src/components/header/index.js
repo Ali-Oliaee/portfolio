@@ -16,6 +16,7 @@ import List from "@mui/material/List";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import SwitchLanguage from "../switch-language";
+import i18n from "../../utils/i18n";
 import { useTranslation } from "react-i18next";
 import "./style.scss";
 
@@ -63,12 +64,12 @@ const MobileHeader = () => {
         <MenuIcon className="burger-icon" />
       </IconButton>
       <Drawer
-        anchor="left"
+        anchor={i18n.dir() === "rtl" ? "right" : "left"}
         open={visible}
         onClose={() => setVisible(false)}
         className="mobile-header-drawer"
       >
-        <List>
+        <List className="list">
           <ListItem
             button
             component={Link}
