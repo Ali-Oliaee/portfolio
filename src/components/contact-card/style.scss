@@ -11,19 +11,24 @@
   cursor: pointer;
   height: 100px;
   width: 300px;
+  &:hover {
+    .card-icon svg {
+      transform: scale(3);
+      opacity: 0.7;
+    }
+  }
 
   .card-icon {
     margin-inline-end: 20px;
-    background-color: rgba(18, 26, 18, 0.933);
+    background-color: rgba(0, 0, 0, 0.637);
     padding: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: #fca311;
-    position: relative;
-  }
-  .icon svg {
-    position: absolute;
+    svg {
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
