@@ -11,6 +11,14 @@
     font-weight: bold;
     text-align: center;
   }
+  .divider {
+    width: 80%;
+    margin: 20px auto;
+    &::before,
+    &::after {
+      border-top: 1px solid #fca2116b;
+    }
+  }
   .description {
     text-align: center;
     p {

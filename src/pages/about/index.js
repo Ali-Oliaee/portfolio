@@ -6,8 +6,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Button, Divider, Avatar } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import myPicture from "../../assets/images/mine.jpg";
 import SmoothList from "react-smooth-list";
 import "./style.scss";
 
@@ -18,6 +19,13 @@ const AboutPage = () => {
       <SmoothList>
         <h1 className="title">{t("about-title")}</h1>
         <div className="description">
+          <Divider className="divider">
+            <Avatar
+              src={myPicture}
+              alt="my pic"
+              sx={{ width: 120, height: 120 }}
+            />
+          </Divider>
           <h3>&#128075;&#128512;{t("Hi")}</h3>
           <p>{t("about-description")} </p>
           <p>
