@@ -37,6 +37,10 @@
   p {
     text-indent: 30px;
     margin: 10px;
+
+    @media screen and (max-width: 500px) {
+      text-indent: 0;
+    }
   }
 
   .personality {

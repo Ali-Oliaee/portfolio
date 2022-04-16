@@ -20,7 +20,8 @@
     margin: 10px;
   }
 }
-.MuiDrawer-paperAnchorLeft {
+.MuiDrawer-paperAnchorLeft,
+.MuiDrawer-paperAnchorRight {
   min-width: 220px;
 }
 .mobile-header-switch-language {
