@@ -73,7 +73,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio/projects"
+            to="/portfolio"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>
@@ -106,7 +106,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio"
+            to="/portfolio/projects"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>

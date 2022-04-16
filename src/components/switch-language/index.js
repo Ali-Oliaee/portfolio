@@ -12,8 +12,8 @@ const SwitchLanguage = ({ className }) => {
       <span className="language">{t("language")}:</span>
       <FormControl variant="standard">
         <Select
-          defaultValue={i18n.language}
-          IconComponent={null}
+          value={i18n.language}
+          IconComponent={() => <span />}
           onChange={(e) => i18n.changeLanguage(e.target.value)}
           className="select"
         >
