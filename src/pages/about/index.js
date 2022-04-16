@@ -30,7 +30,7 @@ const AboutPage = () => {
           <p>{t("about-description")} </p>
           <p>
             {t("contact-text")}
-            <Button to="/contact" LinkComponent={Link}>
+            <Button to="/portfolio/contact" LinkComponent={Link}>
               {t("contact-me")}
             </Button>
           </p>

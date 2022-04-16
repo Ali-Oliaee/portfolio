@@ -27,78 +27,78 @@ const PortfolioPage = () => {
             src={phoneBook}
             title={t("phone-book")}
             description={t("phone-book-description")}
-            code="https://github.com/ali80-sys/phoneBook/"
+            code="https://github.com/ali-oliaee/phoneBook/"
             disableDemo
           />
           <ProjectCard
             src={signupPage}
             title={t("signup-page")}
             description={t("signup-page-description")}
-            demo="https://ali80-sys.github.io/signup-page/"
-            code="https://github.com/ali80-sys/signup-page/"
+            demo="https://ali-oliaee.github.io/signup-page/"
+            code="https://github.com/ali-oliaee/signup-page/"
           />
           <ProjectCard
             src={portfolio}
             title={t("portfolio")}
             description={t("portfolio-description")}
-            demo="https://ali80-sys.github.io/Ali-Oliaee/"
-            code="https://github.com/ali80-sys/Ali-Oliaee/"
+            demo="https://ali-oliaee.github.io/Ali-Oliaee/"
+            code="https://github.com/ali-oliaee/Ali-Oliaee/"
           />
           <ProjectCard
             src={calculator}
             title={t("calculator")}
             description={t("calculator-description")}
-            demo="https://ali80-sys.github.io/Calculator/"
-            code="https://github.com/ali80-sys/Calculator/"
+            demo="https://ali-oliaee.github.io/Calculator/"
+            code="https://github.com/ali-oliaee/Calculator/"
           />
           <ProjectCard
             src={newsSite}
             title={t("news-site")}
             description={t("news-site-description")}
-            demo="https://ali80-sys.github.io/lorem-news/"
-            code="https://github.com/ali80-sys/lorem-news/"
+            demo="https://ali-oliaee.github.io/lorem-news/"
+            code="https://github.com/ali-oliaee/lorem-news/"
           />
           <ProjectCard
             src={lovePage}
             title={t("love-page")}
             description={t("love-page-description")}
-            demo="https://ali80-sys.github.io/Love-page/"
-            code="https://github.com/ali80-sys/Love-page/"
+            demo="https://ali-oliaee.github.io/Love-page/"
+            code="https://github.com/ali-oliaee/Love-page/"
           />
           <ProjectCard
             src={adviceGenerator}
             title={t("advice-generator")}
             description={t("advice-description")}
-            demo="https://ali80-sys.github.io/advice-generator-app/"
-            code="https://github.com/ali80-sys/advice-generator-app/"
+            demo="https://ali-oliaee.github.io/advice-generator-app/"
+            code="https://github.com/ali-oliaee/advice-generator-app/"
           />
           <ProjectCard
             src={nftCard}
             title={t("nft-card")}
             description={t("nft-description")}
-            demo="https://ali80-sys.github.io/NFT-card-component/"
-            code="https://github.com/ali80-sys/NFT-card-component/"
+            demo="https://ali-oliaee.github.io/NFT-card-component/"
+            code="https://github.com/ali-oliaee/NFT-card-component/"
           />
           <ProjectCard
             src={clock}
             title={t("digital-clock")}
             description={t("clock-description")}
-            demo="https://ali80-sys.github.io/Digital-clock/"
-            code="https://github.com/ali80-sys/Digital-clock/"
+            demo="https://ali-oliaee.github.io/Digital-clock/"
+            code="https://github.com/ali-oliaee/Digital-clock/"
           />
           <ProjectCard
             src={aiPage}
             title={t("ai-page")}
             description={t("ai-page-description")}
-            demo="https://ali80-sys.github.io/Single-webPage/"
-            code="https://github.com/ali80-sys/Single-webPage/"
+            demo="https://ali-oliaee.github.io/Single-webPage/"
+            code="https://github.com/ali-oliaee/Single-webPage/"
           />
           <ProjectCard
             src={instagramUi}
             title={t("instagram-ui")}
             description={t("instagram-ui-description")}
-            // demo="https://ali80-sys.github.io/Instagram-UI/"
-            code="https://github.com/ali80-sys/Instagram-UI/"
+            // demo="https://ali-oliaee.github.io/Instagram-UI/"
+            code="https://github.com/ali-oliaee/Instagram-UI/"
             disableDemo
           />
 
@@ -106,13 +106,13 @@ const PortfolioPage = () => {
             src={qrCard}
             title={t("qr-card")}
             description={t("qr-card-description")}
-            demo="https://ali80-sys.github.io/QR-card-component/"
-            code="https://github.com/ali80-sys/QR-card-component/"
+            demo="https://ali-oliaee.github.io/QR-card-component/"
+            code="https://github.com/ali-oliaee/QR-card-component/"
           />
         </div>
         <div className="learn-more-button">
           <Button
-            href="https://github.com/ali80-sys?tab=repositories"
+            href="https://github.com/ali-oliaee?tab=repositories"
             target="_blank"
           >
             {t("learn-more")}

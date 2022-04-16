@@ -5,12 +5,20 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import Button from "@mui/material/Button";
+import cv from "../../cv.pdf";
 import { useTranslation } from "react-i18next";
 import SmoothList from "react-smooth-list";
 import "./style.scss";
 
 const ResumePage = () => {
   const { t } = useTranslation();
+  const downloadCv = () => {
+    const anchor = document.createElement("a");
+    anchor.setAttribute("href", cv);
+    anchor.setAttribute("download", "");
+    anchor.click();
+  };
   return (
     <div className="resume-page">
       <div>
@@ -35,6 +43,9 @@ const ResumePage = () => {
               <li>{t("learner")}</li>
               <li>{t("listener")}</li>
             </ul>
+            <Button onClick={downloadCv} className="download-cv-button">
+              Download my cv
+            </Button>
           </div>
         </SmoothList>
       </div>
@@ -115,13 +126,23 @@ const ResumePage = () => {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color="text.secondary">
-                Restful API, mysql, express
+                Restful API, mysql, mongoDB, express
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="primary" />
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>Nodejs</TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent color="text.secondary">
+                Scrum, trello, slack, googling, office
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot color="primary" />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>Other</TimelineContent>
             </TimelineItem>
           </Timeline>
         </SmoothList>

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 40px 0;
+  margin: 20px 0;
   margin-inline-start: 50px;
 
   @media screen and (max-width: 500px) {
@@ -16,7 +16,9 @@
       text-align: center;
     }
   }
-
+  .download-cv-button {
+    margin: 20px 0;
+  }
   .MuiTypography-root {
     color: #fca311;
   }
@@ -46,7 +48,6 @@
   .personality {
     ul {
       margin: 10px 0;
-      margin-inline-start: 20px;
 
       li {
         list-style-type: none;

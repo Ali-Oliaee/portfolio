@@ -14,7 +14,7 @@ const SocialButtons = ({ className }) => {
     <div className={className ?? "social-media"}>
       <IconButton
         className="icon-button"
-        href="https://github.com/ali80-sys"
+        href="https://github.com/ali-oliaee"
         target="_blank"
       >
         <GitHubIcon />
