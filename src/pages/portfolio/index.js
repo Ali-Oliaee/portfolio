@@ -14,12 +14,13 @@ import portfolio from "../../assets/images/portfolio.png";
 import newsSite from "../../assets/images/news-site.png";
 import { useTranslation } from "react-i18next";
 import SmoothList from "react-smooth-list";
+import PageWrapper from "../../components/page-wrapper";
 import "./style.scss";
 
 const PortfolioPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="portfolio-page">
+    <PageWrapper className="portfolio-page">
       <SmoothList>
         <h1>{t("portfolio")}</h1>
         <div className="container">
@@ -119,7 +120,7 @@ const PortfolioPage = () => {
           </Button>
         </div>
       </SmoothList>
-    </div>
+    </PageWrapper>
   );
 };
 

@@ -1,17 +1,12 @@
 .contact-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #e5e5e5;
-  flex: 1;
 
   h1 {
     padding: 10px;
     text-align: center;
   }
   p {
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
   }
 
   .cards-container {

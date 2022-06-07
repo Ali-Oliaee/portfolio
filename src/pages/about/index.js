@@ -10,12 +10,13 @@ import { Button, Divider, Avatar } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import myPicture from "../../assets/images/mine.jpg";
 import SmoothList from "react-smooth-list";
+import PageWrapper from "../../components/page-wrapper";
 import "./style.scss";
 
 const AboutPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="about-page">
+    <PageWrapper className="about-page">
       <SmoothList>
         <h1 className="title">{t("about-title")}</h1>
         <div className="description">
@@ -30,7 +31,7 @@ const AboutPage = () => {
           <p>{t("about-description")} </p>
           <p>
             {t("contact-text")}
-            <Button to="/portfolio/contact" LinkComponent={Link}>
+            <Button to="/contact" LinkComponent={Link}>
               {t("contact-me")}
             </Button>
           </p>
@@ -49,7 +50,7 @@ const AboutPage = () => {
           </div>
         </SmoothList>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

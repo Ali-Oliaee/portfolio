@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://ali-oliaee.github.io/portfolio/",
+  "homepage": "https://alioliaee.iran.liara.run/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",

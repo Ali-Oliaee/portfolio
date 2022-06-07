@@ -6,12 +6,13 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SocialButtons from "../../components/social-media";
 import { useTranslation } from "react-i18next";
 import SmoothList from "react-smooth-list";
+import PageWrapper from "../../components/page-wrapper";
 import "./style.scss";
 
 const ContactPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="contact-page">
+    <PageWrapper className="contact-page">
       <SmoothList>
         <h1>{t("contact-me")}</h1>
         <p>{t("contact-description")}</p>
@@ -39,7 +40,7 @@ const ContactPage = () => {
           />
         </div>
       </SmoothList>
-    </div>
+    </PageWrapper>
   );
 };
 

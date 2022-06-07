@@ -43,11 +43,11 @@ const DesktopHeader = () => {
         textColor="primary"
         indicatorColor="primary"
       >
-        <LinkTab label={t("home")} to="/portfolio" />
-        <LinkTab label={t("about")} to="/portfolio/about" />
-        <LinkTab label={t("resume")} to="/portfolio/resume" />
-        <LinkTab label={t("portfolio")} to="/portfolio/projects" />
-        <LinkTab label={t("contact")} to="/portfolio/contact" />
+        <LinkTab label={t("home")} to="/" />
+        <LinkTab label={t("about")} to="/about" />
+        <LinkTab label={t("resume")} to="/resume" />
+        <LinkTab label={t("portfolio")} to="/projects" />
+        <LinkTab label={t("contact")} to="/contact" />
       </Tabs>
       <SwitchLanguage />
     </div>
@@ -73,7 +73,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio"
+            to="/"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>
@@ -84,7 +84,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio/about"
+            to="/about"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>
@@ -95,7 +95,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio/resume"
+            to="/resume"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>
@@ -106,7 +106,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio/projects"
+            to="/projects"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>
@@ -117,7 +117,7 @@ const MobileHeader = () => {
           <ListItem
             button
             component={Link}
-            to="/portfolio/contact"
+            to="/contact"
             onClick={() => setVisible(false)}
           >
             <ListItemIcon>

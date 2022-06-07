@@ -4,15 +4,17 @@ import HomePage from "../pages/home/";
 import ContactPage from "../pages/contact";
 import PortfolioPage from "../pages/portfolio";
 import ResumePage from "../pages/resume";
+import NotFound from "../pages/not-found";
 
 const MainRouter = () => {
   return (
     <Routes>
-      <Route path="/portfolio" element={<HomePage />} />
-      <Route path="/portfolio/about" element={<AboutPage />} />
-      <Route path="/portfolio/contact" element={<ContactPage />} />
-      <Route path="/portfolio/projects" element={<PortfolioPage />} />
-      <Route path="/portfolio/resume" element={<ResumePage />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/projects" element={<PortfolioPage />} />
+      <Route path="/resume" element={<ResumePage />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

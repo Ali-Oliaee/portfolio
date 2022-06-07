@@ -64,5 +64,9 @@
     "teamwork":"Teamwork",
     "learner":"Learner",
     "listener": "Listener",
-    "learn-more": "Learn more..."
+    "learn-more": "Learn more...",
+    "Download-cv": "Download my cv",
+    "404": "404",
+    "404-description": "The page you are looking for is not found.",
+    "back-to-home": "Back to home"
 }
