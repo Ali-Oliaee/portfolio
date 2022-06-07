@@ -28,7 +28,7 @@ const ResumePage = () => {
         <div>
           <SmoothList>
             <div className="experience">
-              <h2 className="title">{t("experience")}</h2>
+              <h1 className="title">{t("experience")}</h1>
               <p>{t("experience-description")}</p>
             </div>
           </SmoothList>
