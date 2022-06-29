@@ -4,15 +4,12 @@
   align-items: center;
   justify-content: center;
   max-width: 200px;
-  margin: 10px;
-  cursor: pointer;
+  margin: 12px;
   min-height: 70px;
 
-  &:hover {
-    opacity: 0.8;
-    .card-title {
-      margin-top: 10px;
-    }
+  .card-icon {
+    margin-inline: auto;
+    margin-bottom: 2px;
   }
 
   .card-title {
