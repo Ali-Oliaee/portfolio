@@ -3,17 +3,17 @@ import { useTranslation } from "react-i18next";
 import notFound from "../../assets/images/not-found.png";
 import "./style.scss";
 
-const ProjectCard = ({ src, title, description, demo, code, disableDemo }) => {
+const ProjectCard = ({ src, title, description, demo, code, disableDemo, className }) => {
   const { t } = useTranslation();
   return (
     <div
-      className="project-card"
+      className={`project-card ${className}`}
       style={{ backgroundImage: `url(${src ?? notFound})` }}
     >
       <div className="description-bar">
         <h3>{title}</h3>
         <p>{description}</p>
-        <div className="button-container">
+        <div className="project-card-button-container">
           <Button disabled={disableDemo} href={demo} target="_blank">
             {t("demo")}
           </Button>
