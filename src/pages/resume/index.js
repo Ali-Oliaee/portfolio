@@ -19,135 +19,69 @@ const ResumePage = () => {
     anchor.setAttribute("download", "");
     anchor.click();
   };
+
+  const SkillItem = ({title, description}) => {
+    return (
+      <TimelineItem>
+        <TimelineOppositeContent color="text.secondary">
+          {description}
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>{title}</TimelineContent>
+      </TimelineItem>
+    )
+  }
+
   return (
-      <div className="resume-page">
-        <div>
-          <SmoothList>
-            <div className="experience">
-              <h1 className="title">{t("experience")}</h1>
-              <p>{t("experience-description")}</p>
-            </div>
-          </SmoothList>
-          <SmoothList delay={200}>
-            <div className="education">
-              <h2 className="title">{t("education")}</h2>
-              <p>{t("education-description")}</p>
-            </div>
-          </SmoothList>
-          <SmoothList delay={350}>
-            <div className="personality">
-              <h2 className="title">{t("personality")}</h2>
-              <ul>
-                <li>{t("trustworthy")}</li>
-                <li>{t("teamwork")}</li>
-                <li>{t("learner")}</li>
-                <li>{t("listener")}</li>
-              </ul>
-              <Button onClick={downloadCv} className="download-cv-button">
-                {t("Download-cv")}
-              </Button>
-            </div>
-          </SmoothList>
-        </div>
-        <div className="skills">
-          <SmoothList>
-            <h2 className="title">{t("skills")}</h2>
-            <Timeline position="alternate" style={{ direction: "ltr" }}>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  c++, algoritms, data structures
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>OOP</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  web basics...
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>HTML</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  grid, flexbox, mediaQuery, sass
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>CSS</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  basic usage, github, gitlab
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>Git</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  API, es6
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>JavaScript</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  React-query, React-Router, Antdesign and MaterialUI, i18n, npm
-                  and yarn, hooks, formik, axios, eslint, ssg and ssr (nextjs)
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>React</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  basic commands, terminal usage
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>Linux</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  Restful API, mysql, mongoDB, express
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>Nodejs</TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent color="text.secondary">
-                  Scrum, trello, slack, googling, office
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>Other</TimelineContent>
-              </TimelineItem>
-            </Timeline>
-          </SmoothList>
-        </div>
+    <div className="resume-page">
+      <div>
+        <SmoothList>
+          <div className="experience">
+            <h1 className="title">{t("experience")}</h1>
+            <p>{t("experience-description")}</p>
+          </div>
+        </SmoothList>
+        <SmoothList delay={200}>
+          <div className="education">
+            <h2 className="title">{t("education")}</h2>
+            <p>{t("education-description")}</p>
+          </div>
+        </SmoothList>
+        <SmoothList delay={350}>
+          <div className="personality">
+            <h2 className="title">{t("personality")}</h2>
+            <ul>
+              <li>{t("trustworthy")}</li>
+              <li>{t("teamwork")}</li>
+              <li>{t("learner")}</li>
+              <li>{t("listener")}</li>
+            </ul>
+            <Button onClick={downloadCv} className="download-cv-button">
+              {t("Download-cv")}
+            </Button>
+          </div>
+        </SmoothList>
       </div>
+      <div className="skills">
+        <SmoothList>
+          <h2 className="title">{t("skills")}</h2>
+          <Timeline position="alternate" style={{ direction: "ltr" }}>
+            <SkillItem title="OOP" description="c++, algoritms, data structures" />
+            <SkillItem title="HTML" description="web basics" />
+            <SkillItem title="CSS" description="grid, flexbox, mediaQuery, sass" />
+            <SkillItem title="GIT" description="basic usage, github, gitlab" />
+            <SkillItem title="JavaScript" description="ES6, JSON, Objects, Async/await, Promises, DOM, BOM, APIs, Hoisting, IIFE, Events, browser storages, " />
+            <SkillItem title="React" description="React-query, React-Router, Antdesign and MaterialUI, i18n, npm and yarn, hooks, formik, axios, eslint, ssg and ssr (nextjs)" />
+            <SkillItem title="Node" description="Restful API, mysql, mongoDB, express" />
+            <SkillItem title="Linux" description="basic commands, terminal usage" />
+            <SkillItem title="other" description="Scrum, trello, slack, googling, office" />
+          </Timeline>
+        </SmoothList>
+      </div>
+    </div>
   );
 };
 
