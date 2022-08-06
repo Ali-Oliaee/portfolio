@@ -9,8 +9,6 @@ import Button from "@mui/material/Button";
 import cv from "../../cv.pdf";
 import { useTranslation } from "react-i18next";
 import SmoothList from "react-smooth-list";
-import Footer from "../../components/footer";
-import Header from "../../components/header";
 import "./style.scss";
 
 const ResumePage = () => {
@@ -22,8 +20,6 @@ const ResumePage = () => {
     anchor.click();
   };
   return (
-    <>
-      <Header />
       <div className="resume-page">
         <div>
           <SmoothList>
@@ -152,8 +148,6 @@ const ResumePage = () => {
           </SmoothList>
         </div>
       </div>
-      <Footer />
-    </>
   );
 };
 

@@ -25,15 +25,6 @@ const DesktopHeader = () => {
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => setValue(newValue);
 
-  const LinkTab = (props) => (
-    <Tab
-      onClick={(event) => event.preventDefault}
-      {...props}
-      LinkComponent={Link}
-      to={props.to}
-    />
-  );
-
   return (
     <div className="desktop-header">
       <Tabs
@@ -43,11 +34,11 @@ const DesktopHeader = () => {
         textColor="primary"
         indicatorColor="primary"
       >
-        <LinkTab label={t("home")} to="/" />
-        <LinkTab label={t("about")} to="/about" />
-        <LinkTab label={t("resume")} to="/resume" />
-        <LinkTab label={t("portfolio")} to="/projects" />
-        <LinkTab label={t("contact")} to="/contact" />
+        <Tab label={t("home")} LinkComponent={Link} to="/" value={0}/>
+        <Tab label={t("about")} LinkComponent={Link} to="/about" value={1}/>
+        <Tab label={t("resume")} LinkComponent={Link} to="/resume" value={2}/>
+        <Tab label={t("portfolio")} LinkComponent={Link} to="/projects" value={3}/>
+        <Tab label={t("contact")} LinkComponent={Link} to="/contact" value={4}/>
       </Tabs>
       <SwitchLanguage />
     </div>
