@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import { useTranslation } from "react-i18next";
-import notFound from "../../assets/images/not-found.png";
 import "./style.scss";
 
 const ProjectCard = ({ src, title, description, demo, code, disableDemo, className }) => {
@@ -8,7 +7,7 @@ const ProjectCard = ({ src, title, description, demo, code, disableDemo, classNa
   return (
     <div
       className={`project-card ${className}`}
-      style={{ backgroundImage: `url(${src ?? notFound})` }}
+      style={{ backgroundImage: `url(${src})` }}
     >
       <div className="description-bar">
         <h3>{title}</h3>
