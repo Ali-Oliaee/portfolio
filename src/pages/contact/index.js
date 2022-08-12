@@ -1,6 +1,7 @@
-import {
-  EmailIcon, CallIcon, EmojiPeopleIcon, LocationOnIcon,
-} from '@mui/icons-material'
+import EmailIcon from '@mui/icons-material/Email'
+import CallIcon from '@mui/icons-material/Call'
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { useTranslation } from 'react-i18next'
 import SmoothList from 'react-smooth-list'
 import SocialButtons from '../../components/social-media'
@@ -10,7 +11,6 @@ import './style.scss'
 
 function ContactPage() {
   const { t } = useTranslation()
-
   return (
     <PageWrapper className="contact-page">
       <SmoothList>

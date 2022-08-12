@@ -1,14 +1,20 @@
-import {
-  Tabs, Tab, IconButton, Drawer, ListItem,
-  List, ListItemIcon, ListItemText,
-} from '@mui/material'
-import {
-  MenuIcon, CallIcon, HomeIcon, ArrowCircleDownIcon,
-  FeedOutlinedIcon, InfoOutlinedIcon,
-} from '@mui/icons-material'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import IconButton from '@mui/material/IconButton'
+import MenuIcon from '@mui/icons-material/Menu'
+import CallIcon from '@mui/icons-material/Call'
+import HomeIcon from '@mui/icons-material/Home'
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown'
+import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined'
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
+import Drawer from '@mui/material/Drawer'
+import ListItem from '@mui/material/ListItem'
+import List from '@mui/material/List'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import ListItemText from '@mui/material/ListItemText'
 import { useTranslation } from 'react-i18next'
 import SwitchLanguage from '../switch-language'
 import i18n from '../../utils/i18n'

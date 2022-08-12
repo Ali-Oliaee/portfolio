@@ -1,7 +1,9 @@
-import {
-  SportsEsportsIcon, AudiotrackIcon, ExtensionIcon,
-  GitHubIcon, DirectionsWalkIcon, LocalMoviesIcon,
-} from '@mui/icons-material'
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
+import AudiotrackIcon from '@mui/icons-material/Audiotrack'
+import ExtensionIcon from '@mui/icons-material/Extension'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk'
+import LocalMoviesIcon from '@mui/icons-material/LocalMovies'
 import { Link } from 'react-router-dom'
 import { Button, Divider, Avatar } from '@mui/material'
 import { useTranslation } from 'react-i18next'
