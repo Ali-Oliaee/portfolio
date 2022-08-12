@@ -6,33 +6,41 @@
     font-weight: bold;
     text-align: center;
   }
+
   .divider {
     width: 80%;
     margin: 20px auto;
+
     &::before,
     &::after {
       border-top: 1px solid #fca2116b;
     }
   }
+
   .description {
     text-align: center;
+
     p {
       width: 60%;
       margin: 20px auto;
       line-height: 150%;
     }
+
     a {
       color: #fca311;
       text-decoration: none;
     }
   }
+
   .interests {
     width: 100%;
     margin: 20px 0;
+
     h2 {
       color: #fca311;
       text-align: center;
     }
+
     .card-container {
       display: flex;
       justify-content: center;

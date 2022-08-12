@@ -1,22 +1,17 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles'
 
-let theme = createTheme({
+const theme = createTheme({
   palette: {
     primary: {
-      main: "#fca311",
+      main: '#fca311',
     },
     secondary: {
-      main: "#e5e5e5",
+      main: '#e5e5e5',
     },
-  },
-});
-
-theme = createTheme(theme, {
-  palette: {
     info: {
-      main: theme.palette.secondary.main,
+      main: '#e5e5e5',
     },
   },
-});
+})
 
-export default theme;
+export default theme

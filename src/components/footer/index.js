@@ -1,23 +1,25 @@
-import { Button } from "@mui/material";
-import { useTranslation } from "react-i18next";
-import "./style.scss";
+import { Button } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+import './style.scss'
 
-const Footer = () => {
-  const { t } = useTranslation();
+function Footer() {
+  const { t } = useTranslation()
   return (
     <footer className="footer">
       <p>
-        &copy; {t("footer")}
+        &copy;
+        {' '}
+        {t('footer')}
         <Button size="large" href="https://reactjs.org/" target="_blank">
           React
         </Button>
-        {t("and")}
+        {t('and')}
         <Button size="large" href="https://mui.com/" target="_blank">
           MUI
         </Button>
       </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

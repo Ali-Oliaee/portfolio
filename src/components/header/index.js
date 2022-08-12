@@ -1,29 +1,23 @@
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import CallIcon from "@mui/icons-material/Call";
-import HomeIcon from "@mui/icons-material/Home";
-import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
-import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import Drawer from "@mui/material/Drawer";
-import ListItem from "@mui/material/ListItem";
-import List from "@mui/material/List";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import SwitchLanguage from "../switch-language";
-import i18n from "../../utils/i18n";
-import { useTranslation } from "react-i18next";
-import "./style.scss";
+import {
+  Tabs, Tab, IconButton, Drawer, ListItem,
+  List, ListItemIcon, ListItemText,
+} from '@mui/material'
+import {
+  MenuIcon, CallIcon, HomeIcon, ArrowCircleDownIcon,
+  FeedOutlinedIcon, InfoOutlinedIcon,
+} from '@mui/icons-material'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTranslation } from 'react-i18next'
+import SwitchLanguage from '../switch-language'
+import i18n from '../../utils/i18n'
+import './style.scss'
 
-const DesktopHeader = () => {
-  const { t } = useTranslation();
-  const [value, setValue] = useState(0);
-  const handleChange = (event, newValue) => setValue(newValue);
+function DesktopHeader() {
+  const { t } = useTranslation()
+  const [value, setValue] = useState(0)
+  const handleChange = (event, newValue) => setValue(newValue)
 
   return (
     <div className="desktop-header">
@@ -34,20 +28,20 @@ const DesktopHeader = () => {
         textColor="primary"
         indicatorColor="primary"
       >
-        <Tab label={t("home")} LinkComponent={Link} to="/" value={0}/>
-        <Tab label={t("about")} LinkComponent={Link} to="/about" value={1}/>
-        <Tab label={t("resume")} LinkComponent={Link} to="/resume" value={2}/>
-        <Tab label={t("portfolio")} LinkComponent={Link} to="/projects" value={3}/>
-        <Tab label={t("contact")} LinkComponent={Link} to="/contact" value={4}/>
+        <Tab label={t('home')} LinkComponent={Link} to="/" value={0} />
+        <Tab label={t('about')} LinkComponent={Link} to="/about" value={1} />
+        <Tab label={t('resume')} LinkComponent={Link} to="/resume" value={2} />
+        <Tab label={t('portfolio')} LinkComponent={Link} to="/projects" value={3} />
+        <Tab label={t('contact')} LinkComponent={Link} to="/contact" value={4} />
       </Tabs>
       <SwitchLanguage />
     </div>
-  );
-};
+  )
+}
 
-const MobileHeader = () => {
-  const { t } = useTranslation();
-  const [visible, setVisible] = useState(false);
+function MobileHeader() {
+  const { t } = useTranslation()
+  const [visible, setVisible] = useState(false)
 
   return (
     <div className="mobile-header">
@@ -55,7 +49,7 @@ const MobileHeader = () => {
         <MenuIcon className="burger-icon" />
       </IconButton>
       <Drawer
-        anchor={i18n.dir() === "rtl" ? "right" : "left"}
+        anchor={i18n.dir() === 'rtl' ? 'right' : 'left'}
         open={visible}
         onClose={() => setVisible(false)}
         className="mobile-header-drawer"
@@ -70,7 +64,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary={t("home")} />
+            <ListItemText primary={t('home')} />
           </ListItem>
           <ListItem
             button
@@ -81,7 +75,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <InfoOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary={t("about")} />
+            <ListItemText primary={t('about')} />
           </ListItem>
           <ListItem
             button
@@ -92,7 +86,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <FeedOutlinedIcon />
             </ListItemIcon>
-            <ListItemText primary={t("resume")} />
+            <ListItemText primary={t('resume')} />
           </ListItem>
           <ListItem
             button
@@ -103,7 +97,7 @@ const MobileHeader = () => {
             <ListItemIcon>
               <ArrowCircleDownIcon />
             </ListItemIcon>
-            <ListItemText primary={t("portfolio")} />
+            <ListItemText primary={t('portfolio')} />
           </ListItem>
           <ListItem
             button
@@ -114,19 +108,18 @@ const MobileHeader = () => {
             <ListItemIcon>
               <CallIcon />
             </ListItemIcon>
-            <ListItemText primary={t("contact")} />
+            <ListItemText primary={t('contact')} />
           </ListItem>
         </List>
         <SwitchLanguage className="mobile-header-switch-language" />
       </Drawer>
     </div>
-  );
-};
+  )
+}
 
-const Header = () => {
-  const isMobile = useMediaQuery("(max-width: 680px)");
+function Header() {
+  const isMobile = useMediaQuery('(max-width: 680px)')
+  return isMobile ? <MobileHeader /> : <DesktopHeader />
+}
 
-  return isMobile ? <MobileHeader /> : <DesktopHeader />;
-};
-
-export default Header;
+export default Header

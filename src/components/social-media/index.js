@@ -1,17 +1,15 @@
-import IconButton from "@mui/material/IconButton";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import { LinkedIn } from "@mui/icons-material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import GoogleIcon from "@mui/icons-material/Google";
-import { ReactComponent as GitlabLogo } from "../../assets/images/gitlab-logo.svg";
-import { ReactComponent as QueraLogo } from "../../assets/images/quera-logo.svg";
-import "./style.scss";
+import {
+  TelegramIcon, GitHubIcon, InstagramIcon,
+  LinkedIn, WhatsAppIcon, GoogleIcon,
+} from '@mui/icons-material'
+import { IconButton } from '@mui/material'
+import { ReactComponent as GitlabLogo } from '../../assets/images/gitlab-logo.svg'
+import { ReactComponent as QueraLogo } from '../../assets/images/quera-logo.svg'
+import './style.scss'
 
-const SocialButtons = ({ className }) => {
+function SocialButtons({ className }) {
   return (
-    <div className={className ?? "social-media"}>
+    <div className={className ?? 'social-media'}>
       <IconButton
         className="icon-button"
         href="https://github.com/ali-oliaee"
@@ -65,7 +63,7 @@ const SocialButtons = ({ className }) => {
         <QueraLogo className="icon-button" />
       </IconButton>
     </div>
-  );
-};
+  )
+}
 
-export default SocialButtons;
+export default SocialButtons

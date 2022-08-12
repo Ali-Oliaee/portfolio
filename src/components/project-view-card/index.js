@@ -1,9 +1,11 @@
-import Button from "@mui/material/Button";
-import { useTranslation } from "react-i18next";
-import "./style.scss";
+import Button from '@mui/material/Button'
+import { useTranslation } from 'react-i18next'
+import './style.scss'
 
-const ProjectCard = ({ src, title, description, demo, code, className }) => {
-  const { t } = useTranslation();
+function ProjectCard({
+  src, title, description, demo, code, className,
+}) {
+  const { t } = useTranslation()
   return (
     <div
       className={`project-card ${className}`}
@@ -14,15 +16,15 @@ const ProjectCard = ({ src, title, description, demo, code, className }) => {
         <p>{description}</p>
         <div className="project-card-button-container">
           <Button disabled={!demo} href={demo} target="_blank">
-            {t("demo")}
+            {t('demo')}
           </Button>
           <Button href={code} target="_blank">
-            {t("source-code")}
+            {t('source-code')}
           </Button>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
