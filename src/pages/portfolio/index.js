@@ -119,7 +119,7 @@ function PortfolioPage() {
                 {open ? t('learn-less') : t('learn-more')}
               </Button>
             </ListItem>
-            <Collapse in={open} timeout="auto" unmountOnExit className="list-collapse">
+            <Collapse in={open} timeout={1500} unmountOnExit className="list-collapse">
               <Grid container spacing={1} justifyContent="center">
                 <Grid item>
                   <ProjectCard
