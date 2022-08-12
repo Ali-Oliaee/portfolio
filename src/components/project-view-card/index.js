@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import { useTranslation } from "react-i18next";
 import "./style.scss";
 
-const ProjectCard = ({ src, title, description, demo, code, disableDemo, className }) => {
+const ProjectCard = ({ src, title, description, demo, code, className }) => {
   const { t } = useTranslation();
   return (
     <div
@@ -13,7 +13,7 @@ const ProjectCard = ({ src, title, description, demo, code, disableDemo, classNa
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="project-card-button-container">
-          <Button disabled={disableDemo} href={demo} target="_blank">
+          <Button disabled={!demo} href={demo} target="_blank">
             {t("demo")}
           </Button>
           <Button href={code} target="_blank">

@@ -10,7 +10,8 @@ import instagramUi from "../../assets/images/instagram-ui.png";
 import signupPage from "../../assets/images/signup-page.png";
 import clock from "../../assets/images/digital-clock.png";
 import portfolio from "../../assets/images/portfolio.png";
-import newsSite from "../../assets/images/news-site.png";
+import loremNews from "../../assets/images/news-site.png";
+import rareShop from "../../assets/images/rare-shop.png";
 import { useTranslation } from "react-i18next";
 import SmoothList from "react-smooth-list";
 import PageWrapper from "../../components/page-wrapper";
@@ -53,7 +54,6 @@ import "./style.scss";
                 title={t("phone-book")}
                 description={t("phone-book-description")}
                 code="https://github.com/ali-oliaee/phoneBook/"
-                disableDemo
                 />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -63,6 +63,14 @@ import "./style.scss";
                 description={t("signup-page-description")}
                 demo="https://ali-oliaee.github.io/signup-page/"
                 code="https://github.com/ali-oliaee/signup-page/"
+              />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+              <ProjectCard
+                src={rareShop}
+                title={t("rare-shop")}
+                description={t("rare-shop-description")}
+                code="https://github.com/ali-oliaee/rare-shop/"
               />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
@@ -82,10 +90,10 @@ import "./style.scss";
               demo="https://ali-oliaee.github.io/Calculator/"
               code="https://github.com/ali-oliaee/Calculator/"
               />
-              <SwiperSlide>
               </SwiperSlide>
+              <SwiperSlide>
              <ProjectCard
-              src={newsSite}
+              src={loremNews}
               title={t("news-site")}
               description={t("news-site-description")}
               demo="https://ali-oliaee.github.io/lorem-news/"
@@ -97,9 +105,7 @@ import "./style.scss";
                 src={instagramUi}
                 title={t("instagram-ui")}
                 description={t("instagram-ui-description")}
-                // demo="https://ali-oliaee.github.io/Instagram-UI/"
                 code="https://github.com/ali-oliaee/Instagram-UI/"
-                disableDemo
               />
             </SwiperSlide>
             </Swiper>
