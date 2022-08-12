@@ -1,12 +1,10 @@
-import { lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import AboutPage from '../pages/about'
+import HomePage from '../pages/home'
+import ContactPage from '../pages/contact'
+import PortfolioPage from '../pages/portfolio'
+import ResumePage from '../pages/resume'
 import NotFound from '../pages/not-found'
-
-const AboutPage = lazy(() => import('../pages/about'))
-const ContactPage = lazy(() => import('../pages/contact'))
-const PortfolioPage = lazy(() => import('../pages/portfolio'))
-const ResumePage = lazy(() => import('../pages/resume'))
-const HomePage = lazy(() => import('../pages/home'))
 
 function MainRouter() {
   return (
