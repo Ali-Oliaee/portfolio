@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "@mui/material/Button";
+import {Button, Collapse, Grid, List, ListItem } from "@mui/material";
 import ProjectCard from "../../components/project-view-card";
 import phoneBook from "../../assets/images/phone-book.png";
 import adviceGenerator from "../../assets/images/advice-generator.png";
@@ -24,7 +24,8 @@ import "./style.scss";
 
  const PortfolioPage = () => {
   const { t } = useTranslation();
-  const [showMore, setShowMore] = useState(false)
+  const [open, setOpen] = useState(false);
+
   return (
     <PageWrapper className="portfolio-page">
       <SmoothList>
@@ -108,23 +109,34 @@ import "./style.scss";
                 code="https://github.com/ali-oliaee/Instagram-UI/"
               />
             </SwiperSlide>
-            </Swiper>
-            {showMore &&(
-              <div className={`more-projects ${showMore ? 'show' : 'hide'}`}>
-            <ProjectCard
+          </Swiper>
+          <List component="nav" className='more-projects-list'>
+      <ListItem onClick={() => setOpen(!open)}>
+      <Button onClick={() => setOpen(!open)} className="button">
+            {open ? t('learn-less') : t("learn-more")}
+          </Button>
+      </ListItem>
+      <Collapse in={open} timeout="auto" unmountOnExit className="list-collapse">
+        <Grid container spacing={1} justifyContent='center'>
+          <Grid item >
+          <ProjectCard
               src={adviceGenerator}
               title={t("advice-generator")}
               description={t("advice-description")}
               demo="https://ali-oliaee.github.io/advice-generator-app/"
               code="https://github.com/ali-oliaee/advice-generator-app/"
-            />
-            <ProjectCard
+              />
+              </Grid>
+          <Grid item >
+          <ProjectCard
               src={nftCard}
               title={t("nft-card")}
               description={t("nft-description")}
               demo="https://ali-oliaee.github.io/NFT-card-component/"
               code="https://github.com/ali-oliaee/NFT-card-component/"
             />
+          </Grid>
+          <Grid item >
             <ProjectCard
               src={clock}
               title={t("digital-clock")}
@@ -132,6 +144,8 @@ import "./style.scss";
               demo="https://ali-oliaee.github.io/Digital-clock/"
               code="https://github.com/ali-oliaee/Digital-clock/"
             />
+            </Grid>
+          <Grid item >
             <ProjectCard
               src={aiPage}
               title={t("ai-page")}
@@ -139,21 +153,15 @@ import "./style.scss";
               demo="https://ali-oliaee.github.io/Single-webPage/"
               code="https://github.com/ali-oliaee/Single-webPage/"
             />
-            </div>
-            )}
-        </div>
-        <div className="button-container">
-          <Button onClick={() => setShowMore(!showMore)}>
-            {showMore ? t('learn-less') : t("learn-more")}
-          </Button>
-          <Button
-            href="https://github.com/ali-oliaee?tab=repositories"
-            target="_blank"
+            </Grid>
+        </Grid>
 
-          >
+      </Collapse>
+    </List>
+          </div>
+          <Button href="https://github.com/ali-oliaee?tab=repositories" target="_blank" style={{textAlign: 'center', display: 'block'}}>
             {t('show-all')}
           </Button>
-            </div>
       </SmoothList>
     </PageWrapper>
   );
