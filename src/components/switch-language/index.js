@@ -16,7 +16,7 @@ function SwitchLanguage({ className }) {
       <FormControl variant="standard">
         <Select
           value={i18n.language}
-          IconComponent={false}
+          IconComponent={() => null}
           onChange={(e) => i18n.changeLanguage(e.target.value)}
           className="select"
         >
