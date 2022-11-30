@@ -1,6 +1,10 @@
 import {
-  TimelineConnector, TimelineContent, TimelineDot,
-  TimelineItem, TimelineOppositeContent, TimelineSeparator,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineOppositeContent,
+  TimelineSeparator,
 } from '@mui/lab'
 
 function SkillItem({ title, description }) {

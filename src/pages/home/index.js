@@ -27,9 +27,8 @@ function HomePage() {
     <PageWrapper className="home-page">
       <Particles options={options} init={customInit} />
       <h1 className="name">
-        {t('name')}
-        {' '}
-        <span className="family">{t('family')}</span>
+        {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+        {t('name')} <span className="family">{t('family')}</span>
       </h1>
       <p className="description">{t('home-description')}</p>
       <SocialButtons />

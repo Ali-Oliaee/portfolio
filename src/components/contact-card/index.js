@@ -1,8 +1,6 @@
 import './style.scss'
 
-function ContactCard({
-  icon, title, text, className,
-}) {
+function ContactCard({ icon, title, text, className }) {
   return (
     <div className={className ?? 'contact-card'}>
       <span className="card-icon">{icon}</span>

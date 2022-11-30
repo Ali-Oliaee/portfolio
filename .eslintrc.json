@@ -29,13 +29,9 @@
         "no-unused-vars": "warn",
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
-        "object-curly-newline": ["error", {
-            "ObjectExpression": "always",
-            "ObjectPattern": { "multiline": true },
-            "ImportDeclaration": "never",
-            "ExportDeclaration": { "multiline": true, "minProperties": 3 }
-        }],
+        "object-curly-newline": 0,
         "global-require": 0,
+        "ObjectExpression": 0,
         "react/jsx-filename-extension": [
             1,
             {

@@ -63,7 +63,6 @@ function ResumePage() {
             <h2 className="title">{t('personality')}</h2>
             <ul>
               <li>{t('trustworthy')}</li>
-              <li>{t('teamwork')}</li>
               <li>{t('learner')}</li>
               <li>{t('listener')}</li>
             </ul>
