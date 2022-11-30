@@ -58,7 +58,10 @@
     "rare-shop-description": "A Dapp that allows users to buy stuff with crypto and it's connect to your metamask account. most used technologies are react, redux, etherjs.",
     "skills": "Skills",
     "experience": "Experience",
-    "experience-description": "From nov 22, 2021 to march 20, 2022, I worked at Arash Web Company as a frontend intern, During this time I have participated in several projects and also learned the main topics of the clean code book and met good friends and colleagues :)",
+    "arashweb": "Arashweb",
+    "arashweb-description": "I worked at ArashWeb Company as a frontend intern, During this time I have participated in several projects and also learned the main topics of the clean code book and met good friends and colleagues :)",
+    "felixin":"Felixin",
+    "felixin-intern-description" : "During this time, I was working with React Native as a mobile app development intern, and I got to know more about the development process of mobile apps and the differences between mobile operating systems. Most importantly, I touched the remote work culture closely.",
     "education": "Education",
     "education-description": "I am currently an undergraduate computer engineering student and have been studying since 2019.",
     "personality": "Personality",
@@ -72,5 +75,11 @@
     "404-description": "The page you are looking for is not found.",
     "back-to-home": "Back to home",
     "learn-less": "Learn less",
-    "show-all": "Show all"
+    "show-all": "Show all",
+    "intern": "Intern",
+    "arashweb-date": "Nov 2021 - March 2022 (4mons)",
+    "felixin-intern-date": "Oct 2022 - Nov 2022 (2mons)",
+    "fulltime-remote": "Fulltime-Remote",
+    "felixin-hire-date": "Nov 2022 - Present",
+    "felixin-hire-description": "After completing the internship, I decided to deal with international projects and solve challenges in Felixin." 
 }

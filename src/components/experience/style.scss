@@ -1,0 +1,47 @@
+.experience-item {
+    border-bottom:1px solid #fca311;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+        
+        &::after {
+            content: '';
+            width: 60%;
+            height: 1px;
+            background-color: #fca311;
+            margin-top: 20px;
+        }
+        
+    }
+
+    .company-logo {
+        width: 120px;
+        height: 30px;
+        object-fit: contain;
+        margin-inline-end: 10px;
+    }
+    .company-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fca311;
+        margin-bottom: 10px;
+    }
+    .company-link { 
+        padding-inline: 10px;
+    }
+    .role {
+        margin-inline: 12px;
+        font-size: 1rem;
+        display: inline;
+    }
+    .date { 
+        display: inline;
+        font-size: 1rem;
+    }
+}
