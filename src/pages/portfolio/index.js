@@ -1,8 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import { useState } from 'react'
-import {
-  Button, Collapse, Grid, List, ListItem,
-} from '@mui/material'
+import { Button, Collapse, Grid, List, ListItem } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import SmoothList from 'react-smooth-list'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -43,9 +41,7 @@ function PortfolioPage() {
             pagination
             modules={[Autoplay, EffectCoverflow, Pagination]}
           >
-            {mainProjects.map(({
-              title, description, demo, code, src,
-            }) => (
+            {mainProjects.map(({ title, description, demo, code, src }) => (
               <SwiperSlide key={title} className="swiper-slide">
                 <ProjectCard
                   title={title}
@@ -63,26 +59,38 @@ function PortfolioPage() {
                 {open ? t('learn-less') : t('learn-more')}
               </Button>
             </ListItem>
-            <Collapse in={open} timeout={1500} unmountOnExit className="list-collapse">
+            <Collapse
+              in={open}
+              timeout={1500}
+              unmountOnExit
+              className="list-collapse"
+            >
               <Grid container spacing={1} justifyContent="center">
-                {otherProjects.map(({
-                  title, description, demo, code, src,
-                }) => (
-                  <Grid item key={title}>
-                    <ProjectCard
-                      title={title}
-                      src={src}
-                      description={description}
-                      demo={demo}
-                      code={code}
-                    />
-                  </Grid>
-                ))}
+                {otherProjects.map(
+                  ({ title, description, demo, code, src }) => (
+                    <Grid item key={title}>
+                      <ProjectCard
+                        title={title}
+                        src={src}
+                        description={description}
+                        demo={demo}
+                        code={code}
+                      />
+                    </Grid>
+                  ),
+                )}
               </Grid>
             </Collapse>
           </List>
         </div>
-        <Button href="https://github.com/ali-oliaee?tab=repositories" target="_blank" style={{ textAlign: 'center', display: 'block' }}>
+        <Button
+          href="https://github.com/ali-oliaee?tab=repositories"
+          target="_blank"
+          style={{
+            textAlign: 'center',
+            display: 'block',
+          }}
+        >
           {t('show-all')}
         </Button>
       </SmoothList>
