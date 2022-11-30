@@ -81,5 +81,7 @@
     "felixin-intern-date": "Oct 2022 - Nov 2022 (2mons)",
     "fulltime-remote": "Fulltime-Remote",
     "felixin-hire-date": "Nov 2022 - Present",
-    "felixin-hire-description": "After completing the internship, I decided to deal with international projects and solve challenges in Felixin." 
+    "felixin-hire-description": "After completing the internship, I decided to deal with international projects and solve challenges in Felixin." ,
+    "parents-app": "Parents App",
+    "parents-app-description": "A mobile app that allows new parents to track their baby's growth and development. it's a complete project that I made with react native."
 }
