@@ -1,0 +1,6 @@
+export { default as AboutPage } from './about'
+export { default as ContactPage } from './contact'
+export { default as HomePage } from './home'
+export { default as PortfolioPage } from './portfolio'
+export { default as ResumePage } from './resume'
+export { default as NotFoundPage } from './not-found'

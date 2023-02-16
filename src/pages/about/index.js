@@ -9,8 +9,7 @@ import { Button, Divider, Avatar } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import SmoothList from 'react-smooth-list'
 import myPicture from '../../assets/images/mine.jpeg'
-import InterestCard from '../../components/interest-card'
-import PageWrapper from '../../components/page-wrapper'
+import { InterestCard, PageWrapper } from '../../components'
 import './style.scss'
 
 function AboutPage() {

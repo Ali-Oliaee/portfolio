@@ -1,10 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
-import AboutPage from '../pages/about'
-import HomePage from '../pages/home'
-import ContactPage from '../pages/contact'
-import PortfolioPage from '../pages/portfolio'
-import ResumePage from '../pages/resume'
-import NotFound from '../pages/not-found'
+import {
+  AboutPage,
+  HomePage,
+  ContactPage,
+  PortfolioPage,
+  ResumePage,
+  NotFoundPage,
+} from '../pages'
 
 function MainRouter() {
   return (
@@ -14,7 +16,7 @@ function MainRouter() {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/projects" element={<PortfolioPage />} />
       <Route path="/resume" element={<ResumePage />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   )
 }

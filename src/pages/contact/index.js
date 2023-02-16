@@ -4,9 +4,7 @@ import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { useTranslation } from 'react-i18next'
 import SmoothList from 'react-smooth-list'
-import SocialButtons from '../../components/social-media'
-import ContactCard from '../../components/contact-card'
-import PageWrapper from '../../components/page-wrapper'
+import { SocialButtons, ContactCard, PageWrapper } from '../../components'
 import './style.scss'
 
 function ContactPage() {

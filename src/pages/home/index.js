@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import Particles from 'react-tsparticles'
 import { loadTrianglesPreset } from 'tsparticles-preset-triangles'
-import SocialButtons from '../../components/social-media'
-import PageWrapper from '../../components/page-wrapper'
+import { SocialButtons, PageWrapper } from '../../components'
 import './style.scss'
 
 function HomePage() {

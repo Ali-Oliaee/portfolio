@@ -1,10 +1,10 @@
 import { Button } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import PageWrapper from '../../components/page-wrapper'
+import { PageWrapper } from '../../components'
 import './style.scss'
 
-function NotFound() {
+function NotFoundPage() {
   const { t } = useTranslation()
   return (
     <PageWrapper className="not-found-page">
@@ -17,4 +17,4 @@ function NotFound() {
   )
 }
 
-export default NotFound
+export default NotFoundPage
