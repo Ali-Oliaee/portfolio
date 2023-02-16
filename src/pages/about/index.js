@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { Button, Divider, Avatar } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import SmoothList from 'react-smooth-list'
-import myPicture from '../../assets/images/mine.jpg'
+import myPicture from '../../assets/images/mine.jpeg'
 import InterestCard from '../../components/interest-card'
 import PageWrapper from '../../components/page-wrapper'
 import './style.scss'
@@ -25,17 +25,14 @@ function AboutPage() {
             <Avatar
               src={myPicture}
               alt="my pic"
-              sx={{ width: 120, height: 120 }}
+              sx={{ width: 140, height: 140 }}
             />
           </Divider>
           <h3>
             &#128075;&#128512;
             {t('Hi')}
           </h3>
-          <p>
-            {t('about-description')}
-            {' '}
-          </p>
+          <p>{t('about-description')}</p>
           <p>
             {t('contact-text')}
             <Button to="/contact" LinkComponent={Link}>

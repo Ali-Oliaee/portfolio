@@ -92,27 +92,23 @@ function ResumePage() {
             />
             <SkillItem
               title="React"
-              description="React-query, React-Router, Antdesign and MaterialUI, i18n, npm and yarn, hooks, formik, axios, eslint, ssg and ssr (nextjs)"
+              description="React-query, Redux-toolkit, Styled-components, React-Router, Antdesign and MaterialUI, i18n, npm, yarn, pnpm, hooks, formik, axios, eslint, ssg and ssr (nextjs)"
             />
             <SkillItem
               title="React Native"
-              description="Android studio, Xcode and ios, Expo, Deep linking"
+              description="AndroidStudio, Xcode, Navigation, DeepLinking"
             />
             <SkillItem
               title="Typescript"
-              description="types, jsx, narrowing, enums, ..."
-            />
-            <SkillItem
-              title="Node"
-              description="Restful API, mysql, mongoDB, express"
+              description="types, jsx, narrowing, enums"
             />
             <SkillItem
               title="Linux"
-              description="basic commands, terminal usage"
+              description="basic commands, terminal, process, bashScript, (arch user)"
             />
             <SkillItem
               title="other"
-              description="Scrum, trello, slack, googling, office"
+              description="Scrum, Trello, Jira, Clockify, Slack, Googling, Office"
             />
           </Timeline>
         </SmoothList>
