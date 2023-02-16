@@ -6,16 +6,12 @@ import instagramUi from '../assets/images/instagram-ui.png'
 import portfolio from '../assets/images/portfolio.png'
 import loremNews from '../assets/images/news-site.png'
 import rareShop from '../assets/images/rare-shop.png'
-import adviceGenerator from '../assets/images/advice-generator.png'
-import nftCard from '../assets/images/nft-card.png'
 import parentsApp from '../assets/images/parents-app.jpg'
-import aiPage from '../assets/images/ai-page.png'
-import clock from '../assets/images/digital-clock.png'
 
 const useProjects = () => {
   const { t } = useTranslation()
 
-  const mainProjects = [
+  const projects = [
     {
       title: t('phone-book'),
       src: phoneBook,
@@ -69,40 +65,8 @@ const useProjects = () => {
     },
   ]
 
-  const otherProjects = [
-    {
-      title: t('advice-generator'),
-      src: adviceGenerator,
-      description: t('advice-description'),
-      demo: 'https://ali-oliaee.github.io/advice-generator-app/',
-      code: 'https://github.com/ali-oliaee/advice-generator-app/',
-    },
-    {
-      title: t('nft-card'),
-      src: nftCard,
-      description: t('nft-description'),
-      demo: 'https://ali-oliaee.github.io/NFT-card-component/',
-      code: 'https://github.com/ali-oliaee/NFT-card-component/',
-    },
-    {
-      title: t('digital-clock'),
-      src: clock,
-      description: t('clock-description'),
-      demo: 'https://ali-oliaee.github.io/Digital-clock/',
-      code: 'https://github.com/ali-oliaee/Digital-clock/',
-    },
-    {
-      title: t('ai-page'),
-      src: aiPage,
-      description: t('ai-page-description'),
-      demo: 'https://ali-oliaee.github.io/Single-webPage/',
-      code: 'https://github.com/ali-oliaee/Single-webPage/',
-    },
-  ]
-
   return {
-    mainProjects,
-    otherProjects,
+    projects,
   }
 }
 

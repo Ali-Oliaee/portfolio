@@ -1,24 +1,22 @@
 .portfolio-page {
   color: #e5e5e5;
-  flex: 1;
 
   .swiper {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     flex-wrap: nowrap;
-
 
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 300px;
-      height: 300px;
+      width: 450px;
+      height: 390px;
     }
 
     .swiper-slide img {
-      display: block;
       width: 100%;
+      overflow: hidden;
     }
 
 
@@ -32,21 +30,8 @@
     margin: 20px;
   }
 
-  .container {
-    .more-projects {
-      transition: 0.3s ease-in-out;
-      width: 100%;
-    }
-
-    .show {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .button {
-    margin: 0 auto;
+  .center {
+    display: flex;
+    justify-content: center;
   }
 }
