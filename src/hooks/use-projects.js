@@ -12,7 +12,7 @@ import parentsApp from '../assets/images/parents-app.jpg'
 const useProjects = () => {
   const { t } = useTranslation()
 
-  const projects = [
+  return [
     {
       title: t('phone-book'),
       src: phoneBook,
@@ -72,10 +72,6 @@ const useProjects = () => {
       demo: 'https://ds-qiet.ir',
     },
   ]
-
-  return {
-    projects,
-  }
 }
 
 export default useProjects

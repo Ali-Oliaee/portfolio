@@ -13,7 +13,7 @@ import './style.scss'
 
 function PortfolioPage() {
   const { t } = useTranslation()
-  const { projects } = useProjects()
+  const projects = useProjects()
 
   return (
     <PageWrapper className="portfolio-page">
@@ -38,17 +38,19 @@ function PortfolioPage() {
             pagination
             modules={[Autoplay, EffectCoverflow, Pagination]}
           >
-            {projects.map(({ title, description, demo, code, src }) => (
-              <SwiperSlide key={title} className="swiper-slide">
-                <ProjectCard
-                  title={title}
-                  src={src}
-                  description={description}
-                  demo={demo}
-                  code={code}
-                />
-              </SwiperSlide>
-            ))}
+            {projects
+              .reverse()
+              .map(({ title, description, demo, code, src }) => (
+                <SwiperSlide key={title} className="swiper-slide">
+                  <ProjectCard
+                    title={title}
+                    src={src}
+                    description={description}
+                    demo={demo}
+                    code={code}
+                  />
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
         <div className="center">

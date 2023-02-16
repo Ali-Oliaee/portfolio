@@ -27,10 +27,7 @@ function AboutPage() {
               sx={{ width: 140, height: 140 }}
             />
           </Divider>
-          <h3>
-            &#128075;&#128512;
-            {t('Hi')}
-          </h3>
+          <h3>{t('Hi')}</h3>
           <p>{t('about-description')}</p>
           <p>
             {t('contact-text')}
