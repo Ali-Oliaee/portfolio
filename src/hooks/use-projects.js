@@ -5,6 +5,7 @@ import calculator from '../assets/images/calculator.png'
 import instagramUi from '../assets/images/instagram-ui.png'
 import portfolio from '../assets/images/portfolio.png'
 import loremNews from '../assets/images/news-site.png'
+import ds from '../assets/images/data-structures.png'
 import rareShop from '../assets/images/rare-shop.png'
 import parentsApp from '../assets/images/parents-app.jpg'
 
@@ -62,6 +63,13 @@ const useProjects = () => {
       title: t('parents-app'),
       src: parentsApp,
       description: t('parents-app-description'),
+    },
+    {
+      title: t('data-structures'),
+      src: ds,
+      description: t('data-structures-description'),
+      code: 'https://github.com/Ali-Oliaee/data-structures-and-algorithms',
+      demo: 'https://ds-qiet.ir',
     },
   ]
 

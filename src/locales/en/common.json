@@ -75,5 +75,7 @@
     "felixin-hire-date": "Nov 2022 - Present",
     "felixin-hire-description": "After completing the internship, I decided to deal with international projects and solve challenges in Felixin." ,
     "parents-app": "Parents App",
-    "parents-app-description": "A mobile app that allows new parents to track their baby's growth and development. it's a complete project that I made with react native."
+    "parents-app-description": "A mobile app that allows new parents to track their baby's growth and development. it's a complete project that I made with react native.",
+    "data-structures": "Data Structures",
+    "data-structures-description": "A simple project that I made for fun, it's a data structure visualizer that allows users to see how data structures and algorithms work. made by vitejs and antd. (check demo without vpn)"
 }
