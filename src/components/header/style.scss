@@ -22,9 +22,17 @@
     margin: 10px;
   }
 }
+.MuiListItem-gutters {
+  color: #e5e5e5 !important; 
+
+  svg {
+    color: #e5e5e5 !important; 
+  }
+}
 
 .MuiDrawer-paperAnchorLeft,
 .MuiDrawer-paperAnchorRight {
+  background-color: rgba(49, 49, 49, 0.889) !important;
   min-width: 220px;
 }
 
@@ -35,10 +43,12 @@
 
   .language {
     padding-inline-end: 10px;
+    color: #e5e5e5 !important; 
   }
 
   .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
     padding: 4px 8px;
+    color: #e5e5e5 !important; 
   }
 }
 

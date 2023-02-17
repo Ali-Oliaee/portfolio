@@ -13,7 +13,7 @@ function ContactPage() {
     <PageWrapper className="contact-page">
       <SmoothList>
         <h1>{t('contact-me')}</h1>
-        <p>{t('contact-description')}</p>
+        <p className="contact-description">{t('contact-description')}</p>
         <div className="cards-container">
           <ContactCard
             icon={<EmailIcon />}

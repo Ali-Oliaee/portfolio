@@ -1,61 +1,68 @@
 .resume-page {
   color: #e5e5e5;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 20px 0;
-  margin-inline-start: 50px;
 
-  @media screen and (max-width: 500px) {
-    flex-direction: column-reverse;
-    margin-inline-start: 0;
-
-    p,
-    .title,
-    .personality {
-      text-align: center;
+  .container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;  
+    
+    @media screen and (max-width: 640px) {
+          flex-direction: column-reverse;
+          margin-inline-start: 0;
+          
+          p,
+          .title,
+          .personality,
+          .description-container,
+          .education {
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+          }
+  }
+  
+    .download-cv-button {
+      margin: 20px 0;
     }
-  }
-
-  .download-cv-button {
-    margin: 20px 0;
-  }
-
-  .MuiTypography-root {
-    color: #fca311;
-  }
-
-  .MuiTimelineOppositeContent-positionAlternate {
-    color: #e5e5e5;
-  }
-
-  .title {
-    color: #fca311;
-  }
-
-  .skills {
-    min-width: 290px;
-
+    
+    .MuiTypography-root {
+      color: #fca311;
+    }
+    
+    .MuiTimelineOppositeContent-positionAlternate {
+      color: #e5e5e5;
+    }
+    
     .title {
-      text-align: center;
+      color: #fca311;
     }
-  }
-
-  p {
-    text-indent: 30px;
-    margin: 10px;
-
-    @media screen and (max-width: 500px) {
-      text-indent: 0;
+    
+    .skills {
+      min-width: 290px;
+      
+      .title {
+        text-align: center;
+      }
     }
-  }
-
-  .personality {
-    ul {
-      margin: 10px 0;
-
-      li {
-        list-style-type: none;
+    
+    p {
+      text-indent: 30px;
+      margin: 10px;
+      
+      @media screen and (max-width: 500px) {
+        text-indent: 0;
+      }
+    }
+    
+    .personality {
+      ul {
+        margin: 10px 0;
+        
+        li {
+          list-style-type: none;
+        }
       }
     }
   }
