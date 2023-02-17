@@ -22,23 +22,40 @@ import './style.scss'
 
 function DesktopHeader() {
   const { t } = useTranslation()
-  const [value, setValue] = useState(0)
-  const handleChange = (event, newValue) => setValue(newValue)
 
   return (
     <div className="desktop-header">
       <Tabs
-        value={value}
-        onChange={handleChange}
+        value={window.location.pathname}
         className="tabs"
         textColor="primary"
         indicatorColor="primary"
       >
-        <Tab label={t('home')} LinkComponent={Link} to="/" value={0} />
-        <Tab label={t('about')} LinkComponent={Link} to="/about" value={1} />
-        <Tab label={t('resume')} LinkComponent={Link} to="/resume" value={2} />
-        <Tab label={t('portfolio')} LinkComponent={Link} to="/projects" value={3} />
-        <Tab label={t('contact')} LinkComponent={Link} to="/contact" value={4} />
+        <Tab label={t('home')} LinkComponent={Link} to="/" value="/" />
+        <Tab
+          label={t('about')}
+          LinkComponent={Link}
+          to="/about"
+          value="/about"
+        />
+        <Tab
+          label={t('resume')}
+          LinkComponent={Link}
+          to="/resume"
+          value="/resume"
+        />
+        <Tab
+          label={t('portfolio')}
+          LinkComponent={Link}
+          to="/projects"
+          value="/projects"
+        />
+        <Tab
+          label={t('contact')}
+          LinkComponent={Link}
+          to="/contact"
+          value="/contact"
+        />
       </Tabs>
       <SwitchLanguage />
     </div>
