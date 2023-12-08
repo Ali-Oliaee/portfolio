@@ -1,18 +1,18 @@
 .portfolio-page {
   color: #e5e5e5;
 
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 80px;
     flex-wrap: nowrap;
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 450px;
-      height: 390px;
-    }
 
     .swiper-slide img {
       width: 100%;
